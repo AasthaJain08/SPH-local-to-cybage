@@ -1,4 +1,5 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+
 module.exports = {
   module: {
     rules: [
@@ -9,7 +10,11 @@ module.exports = {
           loader: "babel-loader"
         }
       },
-
+      {test: /\.(png|svg|jpg|gif)$/,
+        use: [
+           'file-loader',
+         ],
+       },
       {
         test: /\.css$/,
         use: [
@@ -26,6 +31,7 @@ module.exports = {
     
           }]
         }
+        
     ]
   },
   plugins: [

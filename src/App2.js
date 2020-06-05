@@ -1,12 +1,11 @@
 import React ,{Component} from 'react';
 import './App.css';
-import './Animate.css'
 import axios from 'axios';
 import ReactGA from 'react-ga';
 ReactGA.initialize('UA-122397506-3');
 ReactGA.pageview(window.location.pathname+window.location.search);
 
-class App extends Component{
+class App2 extends Component{
   constructor(props) {
     super(props);
     this.state = {
@@ -143,4 +142,4 @@ render(){
   );
 }
 }
-export default App;
+export default App2;
